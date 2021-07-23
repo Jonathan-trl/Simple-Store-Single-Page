@@ -1,35 +1,35 @@
-header ul li a i{
-    margin-right: .2rem;
+header ul li a i {
+    margin-right: 0.2rem;
 }
-.grid-3 img{
+.grid-3 img {
     width: 32%;
 }
 
-.products .product{
+.products .product {
     width: 23%;
     cursor: pointer;
 }
 
-.products .product img{
+.products .product img {
     margin-bottom: 20px;
     max-width: 100%;
 }
 
-.products .product .badge-shipping{
+.products .product .badge-shipping {
     font-size: 9px;
     padding: 2px 10px;
     right: 0;
 }
 
-.products .product .discount{
+.products .product .discount {
     font-size: 14px;
     padding: 2px 10px;
     top: 30px;
     right: 0;
 }
 
-.products .product .divisor::after{
-    content: '';
+.products .product .divisor::after {
+    content: "";
     width: 30%;
     height: 3px;
     background-color: #d4d4d4;
@@ -38,103 +38,105 @@ header ul li a i{
     text-align: center;
 }
 
-.products .product .text-disabled{
+.products .product .text-disabled {
     margin-right: 5px;
 }
 
-#brands img{
+#brands img {
     width: auto;
     float: left;
 }
 
-#copyright span{
+#copyright span {
     color: #666;
 }
 
-@media screen and (max-width: 870px){
-    main{
+@media screen and (max-width: 870px) {
+    main {
         display: none;
     }
 
-    nav > div a#login-signup{
+    nav > div a#login-signup {
         width: 50%;
         justify-content: flex-end;
     }
-    nav > div img{
+    nav > div img {
         margin-bottom: 20px;
     }
 }
 
-@media screen and (max-width: 800px){
-
-    .products .product{
+@media screen and (max-width: 800px) {
+    .products .product {
         width: 50%;
         margin-bottom: 30px;
     }
 
-    header ul{
+    header ul {
         width: 100%;
-        justify-content: center!important;
+        justify-content: center !important;
     }
-    header ul:first-child{
+    header ul:first-child {
         margin-bottom: 20px;
     }
 
-    #newsletter h5, #newsletter i{
+    #newsletter h5,
+    #newsletter i {
         margin-bottom: 20px;
     }
 }
 
-@media screen and (max-width: 600px){
-    nav > div{
-        justify-content: center!important;
+@media screen and (max-width: 600px) {
+    nav > div {
+        justify-content: center !important;
     }
-    nav > div a{
-        width: 100%!important;
-        justify-content: center!important;
+    nav > div a {
+        width: 100% !important;
+        justify-content: center !important;
         text-align: center;
     }
-    nav > div form{
+    nav > div form {
         width: 100%;
         margin: 20px 0;
     }
-    nav > div form input{
-        width: 100%;
-    }
-
-}
-
-@media screen and (max-width: 500px){
-    .product{
-        width: 100%!important;
-    }
-
-    .product img{
+    nav > div form input {
         width: 100%;
     }
 }
 
-@media screen and (max-width: 450px){
-    
-    #brands div{
-        justify-content: center!important;
+@media screen and (max-width: 500px) {
+    .product {
+        width: 100% !important;
+    }
+
+    .product img {
+        width: 100%;
     }
 }
 
-@media screen and (max-width: 400px){
-    
-    nav img{
+@media screen and (max-width: 450px) {
+    #brands div {
+        justify-content: center !important;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    nav img {
         max-width: 100%;
     }
-    #newsletter form .d-flex{
+    #newsletter form .d-flex {
         flex-wrap: wrap;
     }
 
-    #newsletter form .d-flex button{
+    #newsletter form .d-flex div {
+        width: 100%;
+    }
+
+    #newsletter form .d-flex button {
         padding: 1rem 0;
     }
 
-    #newsletter button, #newsletter input{
+    #newsletter button,
+    #newsletter input {
         width: 100%;
     }
 }
