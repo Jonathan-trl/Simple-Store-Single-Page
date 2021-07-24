@@ -189,10 +189,6 @@ header ul li a i {
         max-width: 100%;
     }
 
-    #nav-submenu{
-        width: 100%!important;
-    }
-
     #newsletter form .d-flex {
         flex-wrap: wrap;
     }
@@ -208,5 +204,11 @@ header ul li a i {
     #newsletter button,
     #newsletter input {
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 300px){
+    #nav-submenu{
+        width: 100%!important;
     }
 }
