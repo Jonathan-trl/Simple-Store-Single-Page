@@ -5,6 +5,14 @@ header ul li a i {
     width: 32%;
 }
 
+
+#search {
+    flex: .5;
+}
+#search div{
+    width: 100%;
+}
+
 .products .product {
     width: 23%;
     cursor: pointer;
