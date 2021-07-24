@@ -2,19 +2,15 @@ header ul li a i {
     margin-right: 0.2rem;
 }
 
-#nav-submenu.sticky{
-    z-index: 9999999;
-    position: fixed;
-    top: 0;
-    width: 100%;
+#nav-submenu ul li#bars,#nav-submenu ul li#close{
+    display: none;
+    font-size: 30px;
 }
+
 .grid-3 img {
     width: 32%;
 }
 
-#search {
-    flex: .5;
-}
 #search div{
     width: 100%;
 }
@@ -115,6 +111,61 @@ header ul li a i {
     nav > div form input {
         width: 100%;
     }
+
+    #cart{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 550px){
+    
+    #nav-submenu ul li:not(#bars){
+        display: none;
+    }
+
+    #nav-submenu ul li#bars{
+        display: block;
+    }
+
+    #nav-submenu{
+        left: -50%;
+        transition: left .5s;
+    }
+    #nav-submenu.active{
+        position: fixed;
+        width: 50%;
+        top: 0;
+        height: 100%;
+        z-index: 9999;
+        background-color: #fff;
+        left: 0;
+    }
+    #nav-submenu ul{
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+    #nav-submenu.active ul li#bars{
+        display: none!important;
+    }
+    #nav-submenu.active ul li{
+        display: block!important;
+    }
+    #nav-submenu.active ul li a{
+        color: #525252;
+    }
+
+    #overlay.active{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(0,0,0,.3);
+        z-index: 999;
+    }
+
+    
+    
 }
 
 @media screen and (max-width: 500px) {
@@ -137,6 +188,11 @@ header ul li a i {
     nav img {
         max-width: 100%;
     }
+
+    #nav-submenu{
+        width: 100%!important;
+    }
+
     #newsletter form .d-flex {
         flex-wrap: wrap;
     }
