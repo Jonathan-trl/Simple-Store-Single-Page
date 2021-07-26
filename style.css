@@ -2,22 +2,28 @@ header ul li a i {
     margin-right: 0.2rem;
 }
 
-#nav-submenu ul li#bars,#nav-submenu ul li#close{
+#nav-submenu ul li#bars,
+#nav-submenu ul li#close {
     display: none;
     font-size: 30px;
+}
+
+#nav-submenu form {
+    display: none;
 }
 
 .grid-3 img {
     width: 32%;
 }
 
-#search div{
+#search div {
     width: 100%;
 }
 
 .products .product {
     width: 23%;
     cursor: pointer;
+    overflow: hidden;
 }
 
 .products .product img {
@@ -52,6 +58,19 @@ header ul li a i {
     margin-right: 5px;
 }
 
+.products .product .product-details {
+    bottom: -150%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    white-space: nowrap;
+    transition: bottom 0.25s;
+}
+
+.products .product:hover > .product-details {
+    bottom: 50%;
+}
+
 #brands img {
     width: auto;
     float: left;
@@ -59,6 +78,17 @@ header ul li a i {
 
 #copyright span {
     color: #666;
+}
+
+@media screen and (max-width: 950px) {
+    footer .p-x-3 {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    footer #payments-info > div img {
+        width: 100% !important;
+    }
 }
 
 @media screen and (max-width: 870px) {
@@ -96,7 +126,7 @@ header ul li a i {
 }
 
 @media screen and (max-width: 600px) {
-    nav > div {
+    nav > div.container {
         justify-content: center !important;
     }
     nav > div a {
@@ -105,33 +135,37 @@ header ul li a i {
         text-align: center;
     }
     nav > div form {
-        width: 100%;
-        margin: 20px 0;
-    }
-    nav > div form input {
-        width: 100%;
-    }
-
-    #cart{
-        display: none;
-    }
-}
-
-@media screen and (max-width: 550px){
-    
-    #nav-submenu ul li:not(#bars){
         display: none;
     }
 
-    #nav-submenu ul li#bars{
+    #cart {
+        display: none;
+    }
+
+    #nav-submenu form {
         display: block;
     }
 
-    #nav-submenu{
-        left: -50%;
-        transition: left .5s;
+    #nav-submenu {
+        background-color: #fff !important;
+        padding: 0 50px;
     }
-    #nav-submenu.active{
+    #nav-submenu ul {
+        margin: 0;
+    }
+    #nav-submenu ul li:not(#bars) {
+        display: none;
+    }
+
+    #nav-submenu ul li#bars {
+        display: block;
+    }
+
+    #nav-submenu {
+        left: -50%;
+        transition: left 0.5s;
+    }
+    #nav-submenu.active {
         position: fixed;
         width: 50%;
         top: 0;
@@ -139,33 +173,36 @@ header ul li a i {
         z-index: 9999;
         background-color: #fff;
         left: 0;
+        align-items: initial;
+        padding: initial;
     }
-    #nav-submenu ul{
+    #nav-submenu ul {
         justify-content: flex-start;
         flex-direction: column;
     }
-    #nav-submenu.active ul li#bars{
-        display: none!important;
+    #nav-submenu.active ul li#bars {
+        display: none !important;
     }
-    #nav-submenu.active ul li{
-        display: block!important;
+    #nav-submenu.active ul li {
+        display: block !important;
     }
-    #nav-submenu.active ul li a{
+    #nav-submenu.active ul li a {
         color: #525252;
     }
 
-    #overlay.active{
+    #nav-submenu.active form {
+        display: none;
+    }
+
+    #overlay.active {
         position: fixed;
         width: 100%;
         height: 100%;
         top: 0;
         left: 0;
-        background-color: rgba(0,0,0,.3);
+        background-color: rgba(0, 0, 0, 0.3);
         z-index: 999;
     }
-
-    
-    
 }
 
 @media screen and (max-width: 500px) {
@@ -181,6 +218,14 @@ header ul li a i {
 @media screen and (max-width: 450px) {
     #brands div {
         justify-content: center !important;
+    }
+
+    #nav-submenu {
+        padding: 0 10px;
+    }
+
+    #bars {
+        padding: 0 20px;
     }
 }
 
@@ -207,8 +252,22 @@ header ul li a i {
     }
 }
 
-@media screen and (max-width: 300px){
-    #nav-submenu{
-        width: 100%!important;
+@media screen and (max-width: 320px) {
+    #bars {
+        padding: 0 10px;
+    }
+
+    #search div {
+        width: 90%;
+    }
+
+    #nav-submenu {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    #nav-submenu {
+        width: 100% !important;
     }
 }

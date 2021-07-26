@@ -96,7 +96,7 @@
                 <i class="fa fa-shopping-cart fs-50"></i>
             </a>
         </div>
-        <div id="nav-submenu" class="bg-dark text-white">
+        <div id="nav-submenu" class="d-flex align-center justify-between bg-dark text-white">
             <ul class="container d-flex fw justify-around fw-bold  fs-16">
                 <li id="close" class="p-x-2 m-y-1">
                     <a href="#"><i class="fa fa-close fs-30"></i></a>
@@ -126,9 +126,17 @@
                     <a href="#">Relógios</a>
                 </li>
                 <li id="bars" class="p-x-2 m-y-1">
-                    <a href="#"><i class="fa fa-bars fs-30"></i></a>
+                    <a href="#"><i class="fa fa-bars fs-30 text-dark"></i></a>
                 </li>
             </ul>
+            <form action="" id="search">
+                <div class="d-flex justify-between border-1-dark">
+                    <input type="text" class="w-100 p-y-1 p-x-1  border-none" placeholder="Digite o que você deseja">
+                    <button type="submit" class="border-none bg-transparent cursor-pointer pr-1">
+                        <i class="fa fa-search fs-19"></i>
+                    </button>
+                </div>
+            </form>
         </div>
     </nav>
 
@@ -148,7 +156,7 @@
     </main>
 
     <section id="featured" class="container">
-        <h2 class="mt-3 text-center">Destaques</h2>
+        <h2 class="text-center">Destaques</h2>
         <div class="d-flex justify-between fw products">
             <div class="product position-relative">
                 <img src="img/produto-1.jpg" alt="">
@@ -157,6 +165,7 @@
                 <div class="d-flex flex-column text-center">
                     <p>Preço sob consulta</p>
                 </div>
+                <div class="product-details bg-white text-dark p-y-1 p-x-1 position-absolute">Ver detalhes</div>
             </div>
 
             <div class="product position-relative">
@@ -180,6 +189,7 @@
                     </p>
                     <p>até 10x de R$ 52,84</p>
                 </div>
+                <div class="product-details bg-white text-dark p-y-1 p-x-1 position-absolute">Ver detalhes</div>
             </div>
 
             <div class="product position-relative">
@@ -203,6 +213,7 @@
                     </p>
                     <p>até 10x de R$ 52,84</p>
                 </div>
+                <div class="product-details bg-white text-dark p-y-1 p-x-1 position-absolute">Ver detalhes</div>
             </div>
 
             <div class="product position-relative">
@@ -226,12 +237,13 @@
                     </p>
                     <p>até 10x de R$ 52,84</p>
                 </div>
+                <div class="product-details bg-white text-dark p-y-1 p-x-1 position-absolute">Ver detalhes</div>
             </div>
         </div>
     </section>
 
     <section id="releases" class="container">
-        <h2 class="mt-3 text-center">Lançamentos</h2>
+        <h2 class="text-center">Lançamentos</h2>
         <div class="d-flex justify-between fw products">
             <div class="product position-relative">
                 <img src="img/produto-1.jpg" alt="">
@@ -240,6 +252,7 @@
                 <div class="d-flex flex-column text-center">
                     <p>Preço sob consulta</p>
                 </div>
+                <div class="product-details bg-white text-dark p-y-1 p-x-1 position-absolute">Ver detalhes</div>
             </div>
 
             <div class="product position-relative">
@@ -263,6 +276,7 @@
                     </p>
                     <p>até 10x de R$ 52,84</p>
                 </div>
+                <div class="product-details bg-white text-dark p-y-1 p-x-1 position-absolute">Ver detalhes</div>
             </div>
 
             <div class="product position-relative">
@@ -286,6 +300,7 @@
                     </p>
                     <p>até 10x de R$ 52,84</p>
                 </div>
+                <div class="product-details bg-white text-dark p-y-1 p-x-1 position-absolute">Ver detalhes</div>
             </div>
 
             <div class="product position-relative">
@@ -309,12 +324,13 @@
                     </p>
                     <p>até 10x de R$ 52,84</p>
                 </div>
+                <div class="product-details bg-white text-dark p-y-1 p-x-1 position-absolute">Ver detalhes</div>
             </div>
         </div>
     </section>
 
     <section id="best-sellers" class="container">
-        <h2 class="mt-3 text-center">Mais vendidos</h2>
+        <h2 class="text-center">Mais vendidos</h2>
         <div class="d-flex justify-between fw products">
             <div class="product position-relative">
                 <img src="img/produto-1.jpg" alt="">
@@ -323,6 +339,7 @@
                 <div class="d-flex flex-column text-center">
                     <p>Preço sob consulta</p>
                 </div>
+                <div class="product-details bg-white text-dark p-y-1 p-x-1 position-absolute">Ver detalhes</div>
             </div>
 
             <div class="product position-relative">
@@ -346,6 +363,7 @@
                     </p>
                     <p>até 10x de R$ 52,84</p>
                 </div>
+                <div class="product-details bg-white text-dark p-y-1 p-x-1 position-absolute">Ver detalhes</div>
             </div>
 
             <div class="product position-relative">
@@ -369,6 +387,7 @@
                     </p>
                     <p>até 10x de R$ 52,84</p>
                 </div>
+                <div class="product-details bg-white text-dark p-y-1 p-x-1 position-absolute">Ver detalhes</div>
             </div>
 
             <div class="product position-relative">
@@ -392,6 +411,7 @@
                     </p>
                     <p>até 10x de R$ 52,84</p>
                 </div>
+                <div class="product-details bg-white text-dark p-y-1 p-x-1 position-absolute">Ver detalhes</div>
             </div>
         </div>
 
@@ -528,8 +548,8 @@
             <div class="container d-flex fw justify-between" id="payments-info">
                 <div class="mt-1 d-flex flex-column fw">
                     <h4>Pague com</h4>
-                    <img class="w-100" src="img/payments.png" alt="">
-                    <img src="img/payment-pagseguro.png" class="w-100 mt-1" alt="">
+                    <img class="w-70" src="img/payments.png" alt="">
+                    <img src="img/payment-pagseguro.png" class="w-70 mt-1" alt="">
                 </div>
                 <div class="mt-1">
                     <h4>Selos</h4>
